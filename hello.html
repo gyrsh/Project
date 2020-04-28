@@ -1,117 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--required meta tags-->
+    <meta charset="utf-8">
+    <!--The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as-->
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <!--to self adjust width-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" href="icon.png">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
 	<title>Vibhor Portfolio</title>
-	<meta name="viewport" content="width=device-width">
-	<style type="text/css">
-	body 
-	{
-	  background-image: url('back.jpg');
-	  background-repeat: no-repeat;
-	  background-attachment: fixed;
-  	  background-size: 100% 100%;
-	}
-	h1
-	{
-		<!font-family:"roboto condensed",sans-serif;>
-		text-align: center; 
-		font-size: 40px;
-		font-style: italic;
-	}
-	th,td{
-		border: 0.1px white;
-		padding: 10px;
-		margin: 0px;
-	}
-
-	#menu
-	{
-		list-style: none;
-	}
-
-	#menu ul li 
-	{
-		color: white;
-		background-color: black;
-		display: block;
-		border: 1px white;
-		border-radius: 8px;
-		position: relative;
-		margin: 1px;
-		float: left;
-		text-align: center;
-		line-height: 35px;
-		width: 120px;
-	}
-
-	#Introduction
-	{
-		text-align:center;
-		background-image: url(sky.jpg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		font-size:100%;
-		font-family:verdana;
-		color:white;
-		padding:20px;
-		height: 100vh;
-		border:2px black;
-	}
-
-	#header1
-	{
-		background-color: black;
-		height: 45px;
-
-	}
-
-	#Acadmics
-	{
-		border:2px solid black;
-		background-color: rgb(105,105,105);
-		padding: 20px;  
-		border: 2px white;
-	}
-
-	#heading{
-		margin-top: 30vh;
-		border:2px solid black;
-	}
-
-	#skills
-	{
-		background-color: dimgray;
-
-	}
-
-	#Objective
-	{
-		background-color: dimgray;
-	}
-
-	#footer
-	{
-		background-color: dimgrey;
-		<!border:2px solid black;>
-	}
-	.thh{
-		width: 400px;
-		margin: auto;
-	}
-	#form
-	{
-		background-color: hsla(0,0%,41%);
-		position: center;
-	}
-	</style>
+	<!--css file-->
+	<!--<link rel="linkedin" href="linkedin.jpg">-->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="preload" as="font" href="webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href=“https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css”/>-->
+    <script type="text/javascript" src="js/work.js"></script>
 </head>
 	
-<body>
+<body style="background-color:dimgray;">
 
-	<header id="header1">
+	<!--<header id="header1">
 		<h1>
 			<div id="menu">
 				<ul>
@@ -121,12 +33,24 @@
 					<li style="width: 200px;"><a href="#skills">Skills</a></li>
 					<li style="width: 200px;"><a href="#Objective">Objective</a></li>
 					<li style="width: 200px;"><a href="#contact">Contact</a></li>
-					<li><a href="#form">Form</a></li>
+					<li><a href="#form">Info</a></li>
 				</ul>
 			</div>	
 		</h1>
-	</header>
+	</header>-->
+	<header>
+		<div id="mySidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<a href="#Introduction">Introduction</a>
+  			<a href="#Images">Images</a>
+  			<a href="#skills">Skills</a>
+  			<a href="#contact">Contact</a>
+  			<a href="#form">Idea</a>
+		</div>
 
+<!-- Use any element to open the sidenav -->
+		<span onclick="openNav()"><i class="fas fa-align-left fa-3x"></i></span>
+	</header>
 	<header id="Introduction">
 		<section>
 			<article id="heading">	
@@ -139,12 +63,12 @@
 		</section>
 	</header>
 
-	<header style="text-align: center; background-color:dimgray;" >
+	<header style="text-align: center; background-color:black;" >
 		<h1 style="text-align: center;" id="Images">Images</h1>
 			<img src="mine_photo.jpg" alt="my image" height="250" width="250" >
 	</header>
 
-	<header id="Acadmics">
+	<aside id="Acadmics">
 		<h1 style="text-align: center;">
 			My Acadmics
 		</h1>
@@ -159,21 +83,21 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr style="color: white;">
 					<td>1.</td>
 					<td>10<superscript>th</superscript></td>
 					<td>9.2(CGPA)</td>
 					<td>CBSE</td>
 					<td>2015</td>
 				</tr>
-				<tr>
+				<tr style="color: white;">
 					<td>2.</td>
 					<td>12<superscript>th</superscript></td>
 					<td>86.4%</td>
 					<td>CBSE</td>
 					<td>2017</td>
 				</tr>
-				<tr>
+				<tr style="color: white;">
 					<td>3.</td>
 					<td>B. Tech. 3<superscript>rd</superscript> Year</td>
 					<td>75.1%</td>
@@ -182,14 +106,13 @@
 				</tr>
 			</tbody>
 		</table>
-
-	</header>
+	</aside>
 
 	<aside id="skills"><article>
-		<h1 style="text-align: center;">
+		<h1 style="text-align: center;" id="skills">
 			Skills
 		</h1>
-		<h2 style="text-align: center; font-size: 20px;font-style: italic;">
+		<h2 style="text-align: center; font-size: 20px;">
 			<li>Programming Languages : Python,C,C++</li>
 			<li>Library Known : Numpy, Seaborn, Scikit-Learn, Pandas, Keras</li>
 			<li>Tools : Jupyter, Spyder, Pycharm</li>
@@ -203,7 +126,7 @@
 		<h1 style="text-align: center;" id="Objective">
 			Objective
 		</h1>
-		<h2 style="text-align:center; font-style: italic;">
+		<h2 style="text-align:center;font-size: 20px;">
 			Looking for an Summer Internship in 2020 in a developing  organization where I can integrate strategies to develop and expand existing customer sales, brand and product evolution.  
 		</h2>
 	</aside>
@@ -213,77 +136,61 @@
 			Contact
 		</h1>
 		<h2 style="font-style: italic;">
-		<address style="text-align: center;">
+		<address style="text-align: center;font-size: 20px;">
 			Vibhor Bhatnagar<br>
 			vibhor1731022@akgec.ac.in<br>
 			7302183871<br>
 			Moradabad<br>
-			<a href="https://www.linkedin.com/in/vibhor-bhatnagar-1ab1b814b/">View linkedin profile</a>
+			<a href="https://www.linkedin.com/in/vibhor-bhatnagar-1ab1b814b/"><i class="far fa-file fa-2x" style="color:#FFFFFF";></i></a>
+			<a href="https://github.com/gyrsh"><i class="fas fa-cat fa-2x" style="color:#FFFFFF";></i></a>
 		</address>
 		</h2>
 	</footer>
-	<footer id="form">
-	<h1 style="text-align: center; font-size: 50px;font-style: italic;" id="form">For More Information </h1>
-	<h2 style="text-align: center;background-position: center;position: center;">
-	<form action="https://action_page.php" method="get" position="center">
-		<fieldset style="width: 200px;">
-		<legend>Form:</legend>
-		Name:<br>
-			<input type="text" placeholder="Name" name=""><br><br>
-		Email:<br>
-			<input type="mail" placeholder="Email" name=""><br><br>
-		Gender:<br>
-			<input type="radio" name="Gender">Male<br>
-			<input type="radio" name="Gender">Female<br>
-			<input type="radio" name="Gender">Others<br><br>
-		Contact No:<br>
-			<select>
-				<option>+91</option>
-				<option>+52</option>
-				<option>+65</option>
-				<option>+58</option>
-				<option>+54</option>
-			</select>
-			<input type="Phone" placeholder="ContactNo." name=""><br><br>
-		City:<br>
-			<input type="text" placeholder="City" name=""><br><br>
-		State:<br>
-			<select>
-				<option>Andhra Pradesh</option>
-				<option>Arunachal Pradesh</option>
-				<option>Assam</option>
-				<option>Bihar</option>
-				<option>Chhattisgarh</option>
-				<option>Goa</option>
-				<option>Gujrat</option>
-				<option>Haryana</option>
-				<option>Himachal Pradesh</option>
-				<option>Jammu & Kashmir</option>
-				<option>Jharkhand</option>
-				<option>Karnataka</option>
-				<option>Kerala</option>
-				<option>Madhya Pradesh</option>
-				<option>Maharashtra</option>
-				<option>Manipur</option>
-				<option>Meghalaya</option>
-				<option>Mizoram</option>
-				<option>Nagaland</option>
-				<option>Odisha</option>
-				<option>Punjab</option>
-				<option>Rajasthan</option>
-				<option>Sikkim</option>
-				<option>Tamil Nadu</option>
-				<option>Telangana</option>
-				<option>Tripura</option>
-				<option>Uttrakhand</option>
-				<option>Uttar Pradesh</option>
-				<option>West Bangal</option>
-			</select><br><br>
-			
-			<input type="Submit" value="Submit" name=""><br>
-		</fieldset>
-	</form>
-	</h2>
-</footer> 
+<h1 style="text-align: center;" id="form">
+			Any Idea to discuss
+		</h1>
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
 </body>
 </html>

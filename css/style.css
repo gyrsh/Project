@@ -1,0 +1,101 @@
+
+body 
+{
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	  background-size: 100% 100%;
+}
+h1
+{
+	<!font-family:"roboto condensed",sans-serif;>
+	text-align: center; 
+	font-size: 40px;
+	font-style: italic;
+}
+th,td{
+	border: 0.1px white;
+	padding: 10px;
+	margin: 0px;
+}
+
+#menu
+{
+	list-style: none;
+}
+
+#menu ul li 
+{
+	color: white;
+	background-color: black;
+	display: block;
+	border: 1px white;
+	border-radius: 8px;
+	position: relative;
+	margin: 1px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	width: 120px;
+}
+
+#Introduction
+{
+	text-align:center;
+	background-image: url(sky.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-size:100%;
+	font-family:verdana;
+	color:white;
+	padding:20px;
+	height: 100vh;
+	border:2px black;
+}
+
+#header1
+{
+	background-color: black;
+	height: 45px;
+
+}
+
+#Acadmics
+{
+	border:2px solid black;
+	background-color: rgb(105,105,105);
+	padding: 20px;  
+	border: 2px white;
+}
+
+#heading{
+	margin-top: 30vh;
+	border:2px solid black;
+}
+
+#skills
+{
+	background-color: dimgray;
+
+}
+
+#Objective
+{
+	background-color: dimgray;
+}
+
+#footer
+{
+	background-color: dimgrey;
+	<!border:2px solid black;>
+}
+.thh{
+	width: 400px;
+	margin: auto;
+}
+#form
+{
+	background-color: hsla(0,0%,41%);
+	position: center;
+}
